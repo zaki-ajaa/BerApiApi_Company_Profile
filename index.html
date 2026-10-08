@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BerApiApi — Dimsum Mentai yang BerApiApi</title>
+  <meta name="description"
+    content="BerApiApi: dimsum mentai, sate koyor, dan tekwan kuah merah dari Bandar Lampung. Dari nyala torch ke meja kamu.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-flame" viewBox="0 0 24 24">
+      <path
+        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z" />
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+  </svg>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__halo"></div>
+      <img class="loader__logo round" src="assets/logo.png" alt="">
+      <p class="loader__word">Ber<em>Api</em>Api</p>
+      <div class="loader__bar"><i></i></div>
+      <p class="loader__hint">menyalakan torch&hellip;</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header__in">
+      <a class="brand" href="#home">
+        <img class="brand__logo round" src="assets/logo.png" alt="Logo BerApiApi">
+        <span class="brand__name">BerApiApi</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#menu" class="nav__link">Menu</a>
+        <a href="#event" class="nav__link">Event</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <!-- Ganti nomor WhatsApp tujuan sesuai kebutuhan -->
+      <a class="btn btn--solid header__cta"
+        href="https://wa.me/628994102727?text=Halo%20BerApiApi%2C%20aku%20mau%20pesan%20dong!" target="_blank"
+        rel="noopener">Pesan Sekarang</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <span class="spark" style="--x:8%;--d:0s;--t:7s"></span>
+      <span class="spark" style="--x:22%;--d:1.4s;--t:9s"></span>
+      <span class="spark" style="--x:41%;--d:2.6s;--t:8s"></span>
+      <span class="spark" style="--x:63%;--d:.8s;--t:10s"></span>
+      <span class="spark" style="--x:78%;--d:3.4s;--t:7.5s"></span>
+      <span class="spark" style="--x:91%;--d:2s;--t:9.5s"></span>
+
+      <div class="container hero__in">
+        <div class="hero__copy">
+          <span class="badge rise" style="--rd:.15s">Dari nyala torch ke meja kamu</span>
+          <h1 class="rise" style="--rd:.3s">Dimsum Mentai yang <em>BerApiApi</em></h1>
+          <p class="rise" style="--rd:.45s">Saus mentai creamy ditorch hingga smoky, ditaburi seaweed dan wijen sangrai.
+            Menu signature yang melahirkan nama Berapi Api. Ada juga Sate Koyor dan Tekwan Kuah Merah yang siap nemenin
+            harimu.</p>
+          <div class="hero__actions rise" style="--rd:.6s">
+            <a class="btn btn--ghost" href="#menu">Lihat Menu</a>
+            <a class="btn btn--yellow" href="#event">Ketemu di Event</a>
+          </div>
+        </div>
+
+        <div class="hero__visual rise" style="--rd:.45s">
+          <div class="hero__frame">
+            <img src="assets/hero-dimsum.png" alt="Nampan dimsum mentai BerApiApi bertabur seaweed dan wijen">
+          </div>
+          <div class="spinwrap" aria-hidden="true">
+            <svg class="spinwrap__text" viewBox="0 0 200 200">
+              <defs>
+                <path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" />
+              </defs>
+              <text>
+                <textPath href="#circlePath" textLength="452" lengthAdjust="spacing">BERAPIAPI &#8226; DIMSUM MENTAI
+                  &#8226;&#160;&#160;</textPath>
+              </text>
+            </svg>
+            <span class="spinwrap__core"><svg class="flame">
+                <use href="#i-flame" />
+              </svg></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee marquee--yellow" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Dimsum Mentai <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Sate Koyor <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Tekwan Kuah Merah <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Dimsum Cheese <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Es Potong Singapore <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Pedasnya Nampol <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Halal &amp; Higienis <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Dimsum Mentai <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Sate Koyor <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Tekwan Kuah Merah <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Dimsum Cheese <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Es Potong Singapore <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Pedasnya Nampol <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Halal &amp; Higienis <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="about section" id="about">
+      <div class="container about__in">
+        <div class="about__media reveal">
+          <div class="polaroid">
+            <img class="round about__logo" src="assets/logo.png" alt="Logo BerApiApi: dimsum menyala dijepit sumpit">
+          </div>
+        </div>
+        <div class="about__copy">
+          <span class="eyebrow reveal">Cerita Kami</span>
+          <h2 class="reveal" style="--d:.08s">Kenapa sih, &ldquo;BerApiApi&rdquo;?</h2>
+          <p class="reveal" style="--d:.16s">Namanya lahir dari hal sederhana: api dari torch saat kami membuat Dimsum
+            Mentai yang menjadi produk pertama Berapi Api, bersama Dimsum Cheese. Seiring waktu, apinya punya makna
+            lebih: semangat, keberanian untuk memulai, dan passion yang terus menyala. Harapan kami, seperti api yang
+            jadi asal nama kami yang menyala dari satu produk, satu pelanggan, dan satu lokasi ke lokasi berikutnya.</p>
+          <div class="stats reveal" style="--d:.24s">
+            <div class="stat"><b data-count="20" data-suffix="+">0</b><span>Event diikuti</span></div>
+            <div class="stat"><b data-count="3" data-suffix="">0</b><span>Menu andalan</span></div>
+            <div class="stat"><b data-count="5000" data-suffix="+">0</b><span>Porsi terjual</span></div>
+          </div>
+          <a class="btn btn--outline reveal" style="--d:.32s" href="#event">Kenal Lebih Dekat</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="container">
+        <span class="eyebrow reveal">Andalan Kami</span>
+        <h2 class="reveal" style="--d:.08s">Menu Favorit Berapi Api</h2>
+        <p class="section__sub reveal" style="--d:.16s">Tiga menu, satu standar rasa: dibuat dengan perhatian pada
+          kualitas di setiap pesanan.</p>
+
+        <div class="menu__grid">
+          <article class="card reveal" style="--d:.1s">
+            <div class="card__media">
+              <img src="assets/menu-sate.png" alt="Sate koyor tersusun di atas daun pisang">
+            </div>
+            <div class="card__body">
+              <h3>Sate Koyor</h3>
+              <p class="card__price">Rp25.000</p>
+              <a class="card__link"
+                href="https://wa.me/628994102727?text=Halo%20BerApiApi%2C%20aku%20mau%20pesan%20Sate%20Koyor!"
+                target="_blank" rel="noopener">Pesan menu ini <svg class="arrow">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:.22s">
+            <div class="card__media">
+              <img src="assets/menu-dimsum.png" alt="Satu loyang dimsum mentai bertabur wijen">
+            </div>
+            <div class="card__body">
+              <h3>Dimsum Mentai</h3>
+              <p class="card__price">Rp35.000</p>
+              <a class="card__link"
+                href="https://wa.me/628994102727?text=Halo%20BerApiApi%2C%20aku%20mau%20pesan%20Dimsum%20Mentai!"
+                target="_blank" rel="noopener">Pesan menu ini <svg class="arrow">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:.34s">
+            <div class="card__media">
+              <img src="assets/menu-tekwan.png" alt="Semangkuk tekwan kuah merah">
+            </div>
+            <div class="card__body">
+              <h3>Tekwan Kuah Merah</h3>
+              <p class="card__price">Rp20.000</p>
+              <a class="card__link"
+                href="https://wa.me/628994102727?text=Halo%20BerApiApi%2C%20aku%20mau%20pesan%20Tekwan%20Kuah%20Merah!"
+                target="_blank" rel="noopener">Pesan menu ini <svg class="arrow">
+                  <use href="#i-arrow" />
+                </svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section" id="event">
+      <div class="container">
+        <span class="eyebrow reveal">On The Road</span>
+        <h2 class="reveal" style="--d:.08s">Event yang Pernah Kami Ikuti</h2>
+        <p class="section__sub reveal" style="--d:.16s">Dari bazar ke festival, jejak langkah Berapi Api ketemu langsung
+          sama kamu.</p>
+
+        <div class="events__grid">
+          <article class="evcard reveal" style="--d:.05s">
+            <div class="evcard__frame"><img src="assets/event-1.png" alt="Booth BerApiApi di Blablabla Fest"></div>
+            <h3>Blablabla Fest</h3>
+            <p class="evcard__year">2026</p>
+            <a class="evcard__link" href="#contact">Detail <svg class="arrow">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="evcard reveal" style="--d:.15s">
+            <div class="evcard__frame"><img src="assets/event-2.png" alt="Booth BerApiApi di Lampung Wonderfood Fest">
+            </div>
+            <h3>Lampung Wonderfood Fest 2025</h3>
+            <a class="evcard__link" href="#contact">Detail <svg class="arrow">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="evcard reveal" style="--d:.25s">
+            <div class="evcard__frame"><img src="assets/event-3.png" alt="Booth BerApiApi di Lampung Night Fest"></div>
+            <h3>Lampung Night Fest</h3>
+            <p class="evcard__year">2025</p>
+            <a class="evcard__link" href="#contact">Detail <svg class="arrow">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="evcard reveal" style="--d:.35s">
+            <div class="evcard__frame"><img src="assets/event-4.png" alt="Booth BerApiApi di Lampung Expo"></div>
+            <h3>Lampung Expo</h3>
+            <p class="evcard__year">2025</p>
+            <a class="evcard__link" href="#contact">Detail <svg class="arrow">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+          <article class="evcard reveal" style="--d:.45s">
+            <div class="evcard__frame"><img src="assets/event-5.png" alt="Booth BerApiApi di Uleg Bazaar"></div>
+            <h3>Uleg Bazaar</h3>
+            <p class="evcard__year">2025</p>
+            <a class="evcard__link" href="#contact">Detail <svg class="arrow">
+                <use href="#i-arrow" />
+              </svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testi" id="testi">
+      <div class="container">
+        <div class="testi__panel">
+          <span class="eyebrow reveal">Kata Mereka</span>
+          <h2 class="reveal" style="--d:.08s">Cerita dari yang Pernah Coba</h2>
+          <div class="testi__grid">
+            <figure class="tcard reveal" style="--d:.1s">
+              <div class="tcard__stars" aria-label="Rating 5 dari 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>&ldquo;Dimsum mentainya juara! Disiram saus mentai yang dibakar, wangi smokinya kerasa
+                banget.&rdquo;</blockquote>
+              <figcaption>
+                <span class="tcard__ava" aria-hidden="true">R</span>
+                <div><strong>Rayva</strong><small>Mahasiswa UGM</small></div>
+              </figcaption>
+            </figure>
+            <figure class="tcard reveal" style="--d:.2s">
+              <div class="tcard__stars" aria-label="Rating 5 dari 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>&ldquo;Tekwan kuah merahnya pas buat cuaca hujan. Kuahnya kaya rempah, pedasnya nampol.&rdquo;
+              </blockquote>
+              <figcaption>
+                <span class="tcard__ava" aria-hidden="true">Z</span>
+                <div><strong>Zaki</strong><small>Mahasiswa Unila</small></div>
+              </figcaption>
+            </figure>
+            <figure class="tcard reveal" style="--d:.3s">
+              <div class="tcard__stars" aria-label="Rating 5 dari 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>&ldquo;Sate koyor + lontong = kombinasi sederhana yang gak pernah gagal. Repeat order
+                terus.&rdquo;</blockquote>
+              <figcaption>
+                <span class="tcard__ava" aria-hidden="true">G</span>
+                <div><strong>Gusti</strong><small>Warga Lampung</small></div>
+              </figcaption>
+            </figure>
+            <figure class="tcard reveal" style="--d:.4s">
+              <div class="tcard__stars" aria-label="Rating 5 dari 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>&ldquo;Buat acara kantor, semua pada nanya beli di mana. BerApiApi penyelamat!&rdquo;
+              </blockquote>
+              <figcaption>
+                <span class="tcard__ava" aria-hidden="true">S</span>
+                <div><strong>Shaba</strong><small>Warga Sleman</small></div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee marquee--red marquee--rev" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Open Order Setiap Hari <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">08.00&ndash;20.00 WIB <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Bandar Lampung <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Yogyakarta <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Siap Mampir ke Event Kamu <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Open Order Setiap Hari <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">08.00&ndash;20.00 WIB <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Bandar Lampung <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Yogyakarta <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+          <span class="marquee__item">Siap Mampir ke Event Kamu <svg class="flame">
+              <use href="#i-flame" />
+            </svg></span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__in">
+      <div class="footer__brand">
+        <a class="brand brand--light" href="#home">
+          <img class="brand__logo round" src="assets/logo.png" alt="Logo BerApiApi">
+          <span class="brand__name">BerApiApi</span>
+        </a>
+        <p>Kuliner dengan semangat yang menyala, dari Bandar Lampung.</p>
+      </div>
+      <nav class="footer__col" aria-label="Jelajahi">
+        <h4>Jelajahi</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#event">Event</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Hubungi Kami</h4>
+        <p>Bandar Lampung <small>(Alamat)</small></p>
+        <p>Yogyakarta <small>(Alternatif)</small></p>
+        <p>Setiap hari, 08.00&ndash;20.00 WIB</p>
+        <div class="footer__links">
+          <a href="https://wa.me/628994102727" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/berapiapi.io?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="
+            target="_blank" rel="noopener">Instagram</a>
+          <a href="#menu">Online Shop</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 BerApiApi. Semua hak dilindungi. Desain oleh @Zkyy017_</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" id="toTop" href="#top" aria-label="Kembali ke atas"><svg class="flame">
+      <use href="#i-flame" />
+    </svg></a>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
